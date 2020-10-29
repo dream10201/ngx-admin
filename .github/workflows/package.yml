@@ -33,4 +33,4 @@ jobs:
         if: always()
         with:
           name: ngx-admin
-          path: ./
+          path: ./dist
