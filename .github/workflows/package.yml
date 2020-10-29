@@ -26,11 +26,11 @@ jobs:
         name: Build
         run: |
           npm i
-          npm run build:prod
+          npm run build
       - 
         name : Package release
         uses: actions/upload-artifact@master
         if: always()
         with:
           name: ngx-admin
-          path: dist
+          path: ./
